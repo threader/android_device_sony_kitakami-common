@@ -42,13 +42,13 @@ static struct light_state_t g_battery;
 static short backlight_bits = 8;
 
 char const*const RED_LED_FILE
-        = "/sys/class/leds/red/brightness";
+        = "/sys/class/leds/led:rgb_red/brightness";
 
 char const*const GREEN_LED_FILE
-        = "/sys/class/leds/green/brightness";
+        = "/sys/class/leds/led:rgb_green/brightness";
 
 char const*const BLUE_LED_FILE
-        = "/sys/class/leds/blue/brightness";
+        = "/sys/class/leds/led:rgb_blue/brightness";
 
 char const*const LCD_FILE
         = "/sys/class/leds/lcd-backlight/brightness";
@@ -57,58 +57,58 @@ char const*const LCD_MAX_FILE
 	= "/sys/class/leds/lcd-backlight/max_brightness";
 
 char const*const RED_DUTY_PCTS_FILE
-        = "/sys/class/leds/red/duty_pcts";
+        = "/sys/class/leds/led:rgb_red/duty_pcts";
 
 char const*const GREEN_DUTY_PCTS_FILE
-        = "/sys/class/leds/green/duty_pcts";
+        = "/sys/class/leds/led:rgb_green/duty_pcts";
 
 char const*const BLUE_DUTY_PCTS_FILE
-        = "/sys/class/leds/blue/duty_pcts";
+        = "/sys/class/leds/led:rgb_blue/duty_pcts";
 
 char const*const RED_START_IDX_FILE
-        = "/sys/class/leds/red/start_idx";
+        = "/sys/class/leds/led:rgb_red/start_idx";
 
 char const*const GREEN_START_IDX_FILE
-        = "/sys/class/leds/green/start_idx";
+        = "/sys/class/leds/led:rgb_green/start_idx";
 
 char const*const BLUE_START_IDX_FILE
-        = "/sys/class/leds/blue/start_idx";
+        = "/sys/class/leds/led:rgb_blue/start_idx";
 
 char const*const RED_PAUSE_LO_FILE
-        = "/sys/class/leds/red/pause_lo";
+        = "/sys/class/leds/led:rgb_red/pause_lo";
 
 char const*const GREEN_PAUSE_LO_FILE
-        = "/sys/class/leds/green/pause_lo";
+        = "/sys/class/leds/led:rgb_green/pause_lo";
 
 char const*const BLUE_PAUSE_LO_FILE
-        = "/sys/class/leds/blue/pause_lo";
+        = "/sys/class/leds/led:rgb_blue/pause_lo";
 
 char const*const RED_PAUSE_HI_FILE
-        = "/sys/class/leds/red/pause_hi";
+        = "/sys/class/leds/led:rgb_red/pause_hi";
 
 char const*const GREEN_PAUSE_HI_FILE
-        = "/sys/class/leds/green/pause_hi";
+        = "/sys/class/leds/led:rgb_green/pause_hi";
 
 char const*const BLUE_PAUSE_HI_FILE
-        = "/sys/class/leds/blue/pause_hi";
+        = "/sys/class/leds/led:rgb_blue/pause_hi";
 
 char const*const RED_RAMP_STEP_MS_FILE
-        = "/sys/class/leds/red/ramp_step_ms";
+        = "/sys/class/leds/led:rgb_red/ramp_step_ms";
 
 char const*const GREEN_RAMP_STEP_MS_FILE
-        = "/sys/class/leds/green/ramp_step_ms";
+        = "/sys/class/leds/led:rgb_green/ramp_step_ms";
 
 char const*const BLUE_RAMP_STEP_MS_FILE
-        = "/sys/class/leds/blue/ramp_step_ms";
+        = "/sys/class/leds/led:rgb_blue/ramp_step_ms";
 
 char const*const RED_BLINK_FILE
-        = "/sys/class/leds/red/blink";
+        = "/sys/class/leds/led:rgb_red/blink";
 
 char const*const GREEN_BLINK_FILE
-        = "/sys/class/leds/green/blink";
+        = "/sys/class/leds/led:rgb_green/blink";
 
 char const*const BLUE_BLINK_FILE
-        = "/sys/class/leds/blue/blink";
+        = "/sys/class/leds/led:rgb_blue/blink";
 
 #define RAMP_SIZE 8
 static int BRIGHTNESS_RAMP[RAMP_SIZE]
